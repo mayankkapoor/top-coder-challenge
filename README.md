@@ -85,6 +85,9 @@ When you're ready to submit:
 3. Submit via the [submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
 4. When you submit the form you will submit your `private_results.txt` which will be used for your final score.
 
+### Modeling Approach
+The reimbursement model is fit using polynomial regression over the public cases. The script `derive_coefficients.py` rebuilds the coefficient list used by `run.sh`. The model uses trip days, miles, and receipt totals with interaction terms up to degree four.
+
 ---
 
 **Good luck and Bon Voyage!**
