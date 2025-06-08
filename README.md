@@ -85,6 +85,8 @@ When you're ready to submit:
 3. Submit via the [submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
 4. When you submit the form you will submit your `private_results.txt` which will be used for your final score.
 
+### Modeling Approach
+The current solution uses a decision tree regressor trained on the 1,000 public cases. Features are trip duration, miles per day, and receipts per day. The tree is exported to arrays embedded in `run.sh`. Run `derive_tree.py` to regenerate these arrays.
 ---
 
 **Good luck and Bon Voyage!**
