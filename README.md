@@ -86,8 +86,7 @@ When you're ready to submit:
 4. When you submit the form you will submit your `private_results.txt` which will be used for your final score.
 
 ### Modeling Approach
-The reimbursement model is fit using polynomial regression over the public cases. The script `derive_coefficients.py` rebuilds the coefficient list used by `run.sh`. The model uses trip days, miles, and receipt totals with interaction terms up to degree four.
-
+The current solution uses a decision tree regressor trained on the 1,000 public cases. Features are trip duration, miles per day, and receipts per day. The tree is exported to arrays embedded in `run.sh`. Run `derive_tree.py` to regenerate these arrays.
 ---
 
 **Good luck and Bon Voyage!**
